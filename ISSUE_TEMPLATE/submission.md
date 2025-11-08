@@ -73,9 +73,15 @@ assignees: ''
 
 **Analysis:**
 
-- GitHub
+- VS Code / Notepad++ (To open, review, search, and correlate log files)
 
-- Git Bash
+- Microsoft Excel / Google Sheets (To filter, sort, and organise timestamps in CSV log files)
+
+- Terminal / Git Bash (To run Git commands and navigate between folders)
+
+- Manual Correlation (To manually match IP addresses, timestamps, and user IDs across different log files)
+
+- Web Browser (To view API documentation (api_docs.pdf) and the architectural diagram (current_architecture.png))
 
 **Diagrams:**
 
