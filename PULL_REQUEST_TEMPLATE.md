@@ -1,9 +1,12 @@
 ## 📋 Submission Information
 
-**Name:** [Your Full Name]  
-**Email:** [your.email@example.com]  
-**LinkedIn:** [linkedin.com/in/yourprofile] _(optional)_  
-**Submission Date:** [YYYY-MM-DD]
+**Name:** Oğuzhan Çilkurt  
+
+**Email:**  oguzhan196060@gmail.com
+
+**LinkedIn:** [[linkedin.com/in/yourprofile] ](https://www.linkedin.com/in/oguzhan-cilkurt/) 
+
+**Submission Date:** 09.11.2025
 
 ---
 
@@ -11,17 +14,17 @@
 
 Please confirm you've included all required items:
 
-- [ ] **Report** (PDF, max 5 pages)
-  - [ ] Section 1: Incident Analysis
-  - [ ] Section 2: Architecture Review
-  - [ ] Section 3: Response & Remediation
+- [x] **Report** (PDF, max 5 pages)
+  - [x] Section 1: Incident Analysis
+  - [x] Section 2: Architecture Review
+  - [x] Section 3: Response & Remediation
   
-- [ ] **Video Presentation** (10-15 minutes)
-  - [ ] Link provided in `video_link.md`
-  - [ ] Video is accessible (tested in incognito)
-  - [ ] Duration is within guidelines
+- [x] **Video Presentation** (10-15 minutes)
+  - [x] Link provided in `video_link.md`
+  - [x] Video is accessible (tested in incognito)
+  - [x] Duration is within guidelines
 
-- [ ] **File Structure**
+- [x] **File Structure**
 ```
   submissions/firstname-lastname/
   ├── report.pdf
@@ -33,16 +36,16 @@ Please confirm you've included all required items:
 
 ## 📊 Self-Assessment
 
-**Time spent on this lab:** Approximately ___ hours
+**Time spent on this lab:** Approximately 12 hours
 
 **Tools used:**
-- Log analysis: ___________
-- Diagrams: ___________
-- Video recording: ___________
+- Log analysis: From Manual Web Screen
+- Diagrams: Draw.io
+- Video recording: Windows Video Tool
 
 **Confidence level:**
 - [ ] Very confident in my analysis
-- [ ] Confident but some uncertainties
+- [x] Confident but some uncertainties
 - [ ] Attempted my best with available knowledge
 
 ---
@@ -51,6 +54,8 @@ Please confirm you've included all required items:
 
 _Briefly describe your approach and key findings:_
 
+My approach was to first identify the attacker's IP (203.0.113.45) by cross-referencing the security_test_schedule.pdf with the log files. I then pivoted on this IP to build a chronological attack timeline. This revealed three critical, documented-but-unmitigated vulnerabilities: BOLA, SQLi via a misconfigured WAF, and insufficient Rate Limiting.
+
 [Write here]
 
 ---
@@ -58,28 +63,33 @@ _Briefly describe your approach and key findings:_
 ## 🔍 Key Findings Highlight
 
 **Main attack vectors identified:**
-1. ___________
-2. ___________
-3. ___________
+1. API - Broken Object Level Authorization (BOLA)
+2. Web - SQL Injection (via WAF Bypass)
+3. API - Insufficient Rate Limiting & Account Enumeration
 
 **Most critical vulnerability:**
-___________
+
+The Broken Object Level Authorization (BOLA) vulnerability. It was explicitly noted in the api_docs.pdf ("may not verify account ownership") and allowed the attacker to systematically enumerate and exfiltrate portfolio data from all other users using a single, low-privilege token.
 
 **Top recommendation:**
-___________
+
+Implement Centralized, Enforced Authorization at the API Gateway level. This control must validate that the user_id from the JWT token matches the account_id being requested in the API path before forwarding the request to the Trading API.
 
 ---
 
 ## 💭 Challenges & Learnings
 
 **What was most challenging?**
-[Write here]
+
+Correlating the precise timestamps across multiple log files (api_logs.csv, waf_logs.csv, web_logs.csv) to build an accurate attack timeline. Also, correctly interpreting the current_architecture.png to identify the architectural disconnect between the Auth Service and Trading API was a key challenge that required careful re-evaluation.
 
 **What did you learn?**
-[Write here]
+
+I learned how critical WAF configuration (DETECT vs. BLOCK mode) is; a misconfigured WAF is as bad as no WAF. I also learned that "notes" in API documentation (like "may not verify account ownership" or "rate limiting not strictly enforced") are often giant red flags pointing directly to exploitable vulnerabilities.
 
 **What would you do differently?**
-[Write here]
+
+I would start by focusing more on the architectural diagram first. Understanding the fundamental flaw (the disconnect between Auth Service and Trading API) before diving deep into the logs would have made the BOLA log analysis even faster and more intuitive.
 
 ---
 
@@ -87,21 +97,24 @@ ___________
 
 Any context, assumptions, or additional information you'd like evaluators to know:
 
-[Write here]
+My analysis concluded that the attacker's 1523 user account was provided as part of a "Grey Box" test. This assumption is based on the timeline, as the BOLA enumeration (starting 06:47) occurred before the Phishing attack (09:00). The jwt_token_1523_stolen name in the logs also strongly supports this test scenario.
+
+Note: An artificial intelligence assistant was used for guidance and verification in the analysis, reporting and presentation text preparation processes.
 
 ---
 
 ## ⚖️ Declaration
 
 I declare that:
-- [ ] This work is entirely my own
-- [ ] I have not copied from other submissions or answer keys
-- [ ] I have not modified the provided log files
-- [ ] All sources and tools are properly attributed
-- [ ] I understand plagiarism results in disqualification
+- [x] This work is entirely my own
+- [x] I have not copied from other submissions or answer keys
+- [x] I have not modified the provided log files
+- [x] All sources and tools are properly attributed
+- [x] I understand plagiarism results in disqualification
 
-**Signature:** [Your Name]  
-**Date:** [YYYY-MM-DD]
+**Signature:** Oğuzhan Çilkurt 
+
+**Date:** 2025.11.09
 
 ---
 
