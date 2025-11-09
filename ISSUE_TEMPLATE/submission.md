@@ -22,11 +22,11 @@ assignees: ''
 
 **Option A: Attached Files**
 - Report PDF: [[Attach here]](https://drive.google.com/file/d/1OednnfDLOBJl1CgseiXXvWJ9N6CBCn-N/view?usp=sharing)
-- Video link: 
+- Video link: https://youtu.be/L_V5aRKQgls
 
 **Option B: External Links**
 - Report: [[Google Drive / Dropbox link]](https://drive.google.com/file/d/1OednnfDLOBJl1CgseiXXvWJ9N6CBCn-N/view?usp=sharing)
-- Video: [YouTube / Vimeo / Loom link]
+- Video: [[YouTube / Vimeo / Loom link]](https://youtu.be/L_V5aRKQgls)
 
 ---
 
@@ -105,15 +105,15 @@ assignees: ''
 
 Please confirm:
 
-- [x] Report is max 5 pages
-- [ ] Video is 10-15 minutes
+- [ ] Report is max 5 pages
+- [x] Video is 10-15 minutes
 - [x] All log files were analyzed
 - [x] Timeline is timezone-corrected
 - [x] Framework mappings included (ISO 27001, NIST, OWASP)
 - [x] Architecture diagram included
 - [x] Video link is tested and working
 - [x] No plagiarism / proper attribution
-- [x] Original work, not AI-generated
+- [ ] Original work, not AI-generated
 
 ---
 
