@@ -1,136 +1,17 @@
-# 🔐 Acme Security Incident Lab
+# Acme Security
 
-> An open-source security assessment for Security Analyst positions
+## English
+Open-source security incident lab for Acme Security. This repository contains various security-related documents, including API logs, WAF logs, architecture diagrams, and security test schedules.
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./submissions/README.md)
-
-## 🎯 Purpose
-
-This lab evaluates your ability to:
-- **Analyze security incidents** from multiple log sources
-- **Design secure architectures** with defense-in-depth
-- **Document and communicate** findings professionally
-- **Think critically** about real-world security scenarios
-
-## 📖 Scenario
-
-You're a security analyst investigating a coordinated attack on **Acme Financial Services** trading platform. The attack spans multiple vectors:
-
-- 📧 **Phishing campaign** targeting employees
-- 🌐 **Web application** SQL injection
-- 📱 **Mobile API** broken access control
-
-Your mission: Analyze the incident, identify vulnerabilities, propose architectural improvements, and present your findings.
-
-## ⏱️ Lab Details
-
-**Deliverables:**
-- Written report (PDF, max 5 pages)
-- Video presentation (10-15 minutes)
-
-**Deadline:** Monday, 09:00 (Istanbul time)
-
-## 🚀 Getting Started
-
-### Step 1: Review Materials
-Navigate to [`materials/`](./materials/) and download:
-- Log files (API, Web, Email, WAF)
-- Architecture diagram
-- API documentation
-- Supporting materials
-
-### Step 2: Investigate
-Analyze the logs, correlate events, and reconstruct the attack timeline.
-
-### Step 3: Design
-Propose an improved security architecture addressing identified gaps.
-
-### Step 4: Document
-Create a professional incident report with findings and recommendations.
-
-### Step 5: Present
-Record a video walkthrough of your analysis and recommendations.
-
-### Step 6: Submit
-Follow the [submission guidelines](./submissions/README.md) to submit your work.
-
-## 📊 What We're Looking For
-
-✅ **Technical Skills**
-- Log analysis and correlation
-- Attack pattern recognition
-- Security framework knowledge (ISO 27001, NIST, OWASP)
-
-✅ **Architecture Design**
-- Defense-in-depth strategy
-- Practical security controls
-- Risk-based prioritization
-
-✅ **Communication**
-- Clear, structured documentation
-- Professional presentation
-- Evidence-based recommendations
-
-✅ **Attention to Detail**
-- Thorough investigation
-- Cross-referencing multiple sources
-- No assumptions without evidence
-
-## 🎯 Scoring
-
-This lab uses a comprehensive scoring system with transparent evaluation criteria.
-
-**Scoring approach:**
-- Evidence-based assessment
-- Professional work standards
-- Focus on approach and reasoning over "perfect" answers
-
-## 🔒 Privacy Options
-
-This is an **open-source lab** with transparent submission via GitHub:
-
-### Public Submission via Pull Request
-- Fork this repo and submit via Pull Request
-- Your work becomes part of your public portfolio
-- Great for showcasing skills to other employers
-- Evaluation process is visible but scores remain confidential
-
-**Note:** All submissions are reviewed with the same evaluation standards.
-
-## ❓ FAQ
-
-**Q: Can I use AI tools like ChatGPT?**  
-A: Tools are fine for research, but the analysis must be your own. Over-reliance on AI will be obvious and penalized.
-
-**Q: Can I search online for help?**  
-A: Absolutely! Research MITRE ATT&CK, OWASP, and security frameworks. This mirrors real-world work.
-
-**Q: What if I can't finish in time?**  
-A: Submissions must be received by **10/11/2025 Monday at 09:00 (Istanbul time)**. Plan accordingly.
-
-**Q: Is there a single "correct" answer?**  
-A: No. We evaluate your approach, reasoning, and professionalism. Multiple solutions are valid.
-
-**Q: What tools should I use?**  
-A: Use whatever you're comfortable with. Excel, Python, grep, text editors - all are fine. We evaluate your analysis, not your tools.
-
-**Q: How long does the evaluation take?**  
-A: Submissions are due **10/11/2025 Monday at 09:00 (Istanbul time)**. Results will be announced shortly after.
-
-**Q: Can I update my submission after submitting?**  
-A: Yes, if you submit via Pull Request, you can push updates before the deadline. We evaluate the latest version.
-
-**Q: What if I get stuck?**  
-A: That's normal! Document your thought process and explain what you tried. We value problem-solving approach over perfect answers.
-
-**Q: Is this only for experienced analysts?**  
-A: No! This lab is designed for junior to mid-level candidates. If you're learning security, this is a great opportunity to practice.
-
-**Q: Can I include this in my portfolio?**  
-A: Absolutely! If you submit publicly, it's already part of your GitHub portfolio.
+### Contents
+- **Logs**: API, WAF, Email, and Web logs in CSV format.
+- **Documentation**: Security test schedules, architecture diagrams, and submission notes.
 
 ---
 
-**Ready to begin?** Head to [`materials/`](./materials/) to start your investigation! 🔍
+## Türkçe
+Acme Security için açık kaynaklı güvenlik olay laboratuvarı. Bu depo, API logları, WAF logları, mimari diyagramları ve güvenlik test programları gibi güvenlikle ilgili çeşitli belgeler içerir.
 
-⭐ Star this repo if you find it useful for learning!
+### İçerik
+- **Loglar**: CSV formatında API, WAF, E-posta ve Web logları.
+- **Dokümantasyon**: Güvenlik test programları, mimari diyagramlar ve gönderim notları.
